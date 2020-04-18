@@ -4,15 +4,25 @@ import java.util.ArrayList;
 
 public class Empresa {
     private String nombre;
-    /*private ArrayList<Empleado> planilla = new ArrayList<Empleado>();
+    private ArrayList<Empleado> planilla = new ArrayList<Empleado>();
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public ArrayList<Empleado> getPlanilla() {
+        return planilla;
+    }
 
     public void addEmpleado(Empleado){
-        return ;
-    }
-    public void quitEmpleado(String){
 
     }
-*/
+
+    public void quitEmpleado(String nombre){
+        System.out.println("Despedir empleado");
+        System.out.println("Despedir a: " + nombre);
+    }
+
 
 
 

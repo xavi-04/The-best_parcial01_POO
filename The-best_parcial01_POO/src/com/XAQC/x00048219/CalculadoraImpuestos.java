@@ -7,12 +7,12 @@ package com.XAQC.x00048219;
     private CalculadoraImpuestos(){
 
     }
-    /*public static double calcularPago(Empleado){
+    public static double calcularPago(Empleado){
 
+   }
+
+    public static String mostrarTotales() {
+        
     }
 
-    public static String mostrarTotales(){
-
-    }*/
-
-}
+ }
