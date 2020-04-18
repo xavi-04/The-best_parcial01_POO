@@ -19,8 +19,7 @@ public class Empresa {
     }
 
     public void quitEmpleado(String nombre){
-        System.out.println("Despedir empleado");
-        System.out.println("Despedir a: " + nombre);
+        
     }
 
 

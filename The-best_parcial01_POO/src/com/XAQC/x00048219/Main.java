@@ -1,5 +1,6 @@
 package com.XAQC.x00048219;
 
+import javax.swing.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -10,30 +11,37 @@ static Scanner in = new Scanner(System.in);
         ArrayList<Documento> documento = new ArrayList<>();
         ArrayList<Empleado> empleado = new ArrayList<>();
         Empresa unaEmpresa = new Empresa();
-    byte op = 0;
-    byte op1 = 0;
+    int op = 0;
+
         do {
-            menu();
-            op =in.nextByte();in.hasNextLine();
+            op = Integer.parseInt(JOptionPane.showInputDialog(null, menu()));
 
             switch (op){
                 case 1:
-                    do {
-                        subMenu();
-                        op1 = in.nextByte(); in.nextLine();
+                    String puesto = JOptionPane.showInputDialog(null,
+                            "Puesto del empleado: ");
+                    String nombre = JOptionPane.showInputDialog(null,
+                            "Nombre del empleado: ");
+                    String documentox = JOptionPane.showInputDialog(null,
+                            "Tipo de Documento (DUI/NIT):");
 
-                        switch (op1) {
-                            case 1:
-                                break;
-                            case 2:
-                                break;
-                            case 3:
-                                break;
-                            default:
-                                System.out.println("Opción incorecta");
-                                break;
-                        }
-                    }while(op1 != 3);
+                    if (puesto.equals("Servicio profesional")||puesto.equals("servicio profesional")){
+                        int numeroDocumento = Integer.parseInt(JOptionPane.showInputDialog(null,
+                                "Puesto del empleado: "));
+                    }else{
+                        JOptionPane.showInputDialog(null,
+                                "Puesto del empleado: ");
+                    }
+
+
+                    if (documentox.equals("DUI")||documentox.equals("dui")||documentox.equals("Dui")){
+                        int numeroDocumento = Integer.parseInt(JOptionPane.showInputDialog(null,
+                                "Número de DUI del empleado: "));
+                    }else{
+                        JOptionPane.showInputDialog(null,
+                                "Número de NIT del empleado: ");
+                    }
+
                     break;
                 case 2:
                     break;
@@ -46,27 +54,24 @@ static Scanner in = new Scanner(System.in);
                 case 6:
                     return;
                 default:
-                    System.out.println("Opción incorrecta");
+                    JOptionPane.showMessageDialog(null,
+                            "Opción incorrecta, inténtelo nuevamente",
+                            "                                        ¡ERROR!", JOptionPane.ERROR_MESSAGE);
+
                     break;
             }
 
         }while(op != 0);
     }
-    static void menu(){
-        System.out.println("\t\n\n~Bienvenidos~");
-        System.out.println("1) Agregar empleado");
-        System.out.println("2) Despedir empleado");
-        System.out.println("3) Ver lista de empleado");
-        System.out.println("4) Calcular sueldo");
-        System.out.println("5) Mostar totales");
-        System.out.println("6) Salir");
-        System.out.print("   Opción: ");
+
+    static String menu() {
+        return "                    ~Bienvenidos~" +
+                "\n1) Agregar empleado" +
+                "\n2) Despedir empleado" +
+                "\n3) Ver lista de empleado" +
+                "\n4) Calcular sueldo" +
+                "\n5) Mostar totales" +
+                "\n6) Salir";
     }
-    static void subMenu(){
-        System.out.println("\t\n\nTipo de empleado");
-        System.out.println("1) Servicio Profesional");
-        System.out.println("2) Plaza fija");
-        System.out.println("3) Atrás");
-        System.out.print("   Opción: ");
-    }
+
 }

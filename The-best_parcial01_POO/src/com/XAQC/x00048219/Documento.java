@@ -15,4 +15,12 @@ public class Documento {
     public String getNumero() {
         return numero;
     }
+
+    @Override
+    public String toString() {
+        return "Documento{" +
+                "Nombre='" + nombre + '\'' +
+                ", numero='" + numero + '\'' +
+                '}';
+    }
 }
