@@ -1,12 +1,15 @@
 package com.XAQC.x00048219;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
 static Scanner in = new Scanner(System.in);
-    Empresa unaEmpresa = new Empresa();
-    public static void main(String[] args) {
 
+    public static void main(String[] args) {
+        ArrayList<Documento> documento = new ArrayList<>();
+        ArrayList<Empleado> empleado = new ArrayList<>();
+        Empresa unaEmpresa = new Empresa();
     byte op = 0;
     byte op1 = 0;
         do {
