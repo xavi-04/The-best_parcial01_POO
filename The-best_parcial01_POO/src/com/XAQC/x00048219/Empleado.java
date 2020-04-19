@@ -35,5 +35,12 @@ abstract class Empleado {
         documentos.remove(nombre);
     }
 
+    public double getSalario() {
+        return Salario;
+    }
+
+    public void setSalario(double salario) {
+        Salario = salario;
+    }
 }
 

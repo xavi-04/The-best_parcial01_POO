@@ -47,6 +47,7 @@ package com.XAQC.x00048219;
 
 
         }
+        return 0;
     }
 
     public static String mostrarTotales() {
