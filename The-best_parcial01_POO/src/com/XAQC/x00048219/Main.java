@@ -10,7 +10,7 @@ static Scanner in = new Scanner(System.in);
     public static void main(String[] args) {
         ArrayList<Documento> documento = new ArrayList<>();
         ArrayList<Empleado> empleado = new ArrayList<>();
-        Empresa unaEmpresa = new Empresa();
+        Empresa unaEmpresa = new Empresa("The best");
     int op = 0;
 
         do {

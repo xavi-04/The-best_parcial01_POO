@@ -16,8 +16,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/The-best_parcial01_POO" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
@@ -43,16 +45,18 @@
       <updated>1587109446692</updated>
       <workItem from="1587109470000" duration="463000" />
       <workItem from="1587110037070" duration="129000" />
+      <workItem from="1587280197867" duration="648000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="462" y="125" key="FileChooserDialogImpl" timestamp="1587110162504">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state x="462" y="118" key="FileChooserDialogImpl" timestamp="1587280247618">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="462" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1587280247618" />
     <state x="462" y="125" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1587110162504" />
     <state x="65" y="4" key="new project wizard" timestamp="1587110165779">
       <screen x="0" y="0" width="1366" height="768" />
