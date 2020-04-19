@@ -6,6 +6,10 @@ public class Empresa {
     private String nombre;
     private ArrayList<Empleado> planilla = new ArrayList<Empleado>();
 
+    public Empresa(String nombre) {
+        this.nombre = nombre;
+    }
+
     public String getNombre() {
         return nombre;
     }
@@ -15,11 +19,11 @@ public class Empresa {
     }
 
     public void addEmpleado(Empleado){
-
+        planilla.add(trabajador);
     }
 
     public void quitEmpleado(String nombre){
-
+        planilla.remove(despido);
     }
 
 
