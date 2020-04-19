@@ -19,7 +19,7 @@ public class Empresa {
     }
 
     public void quitEmpleado(String nombre){
-        
+
     }
 
 

@@ -24,6 +24,8 @@ static Scanner in = new Scanner(System.in);
                             "Nombre del empleado: ");
                     String documentox = JOptionPane.showInputDialog(null,
                             "Tipo de Documento (DUI/NIT):");
+                    double salario = Integer.parseInt(JOptionPane.showInputDialog(null,
+                            "Salario a pagar: "));
 
                     if (puesto.equals("Servicio profesional")||puesto.equals("servicio profesional")){
                         int numeroDocumento = Integer.parseInt(JOptionPane.showInputDialog(null,
