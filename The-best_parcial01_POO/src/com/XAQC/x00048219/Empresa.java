@@ -22,8 +22,8 @@ public class Empresa {
         planilla.add(empleado);
     }
 
-    public void quitEmpleado(String nombre){
-        planilla.remove(nombre);
+    public void quitEmpleado(String despedir){
+        planilla.remove(despedir);
     }
 
 

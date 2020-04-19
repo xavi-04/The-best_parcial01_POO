@@ -20,38 +20,60 @@ static Scanner in = new Scanner(System.in);
                 case 1:
                     String puesto = JOptionPane.showInputDialog(null,
                             "Puesto del empleado: ");
-                    String nombre = JOptionPane.showInputDialog(null,
-                            "Nombre del empleado: ");
-                    String documentox = JOptionPane.showInputDialog(null,
-                            "Tipo de Documento (DUI/NIT):");
-                    double salario = Integer.parseInt(JOptionPane.showInputDialog(null,
-                            "Salario a pagar: "));
 
-                    if (puesto.equals("Servicio profesional")||puesto.equals("servicio profesional")){
-                        int numeroDocumento = Integer.parseInt(JOptionPane.showInputDialog(null,
-                                "Puesto del empleado: "));
+                    if (puesto.equals("Servicio profesional") || puesto.equals("servicio profesional")) {
+                        String nombre = JOptionPane.showInputDialog(null,
+                                "Nombre del empleado: ");
+                        String documentox = JOptionPane.showInputDialog(null,
+                                "Tipo de Documento (DUI/NIT):");
+                        double salario = Integer.parseInt(JOptionPane.showInputDialog(null,
+                                "Salario a pagar: "));
+                        if (documentox.equals("DUI")||documentox.equals("dui")||documentox.equals("Dui")){
+                            int numeroDocumento = Integer.parseInt(JOptionPane.showInputDialog(null,
+                                    "Número de DUI del empleado: "));
+                        }else{
+                            JOptionPane.showInputDialog(null,
+                                    "Número de NIT del empleado: ");
+
+                        }
                     }else{
-                        JOptionPane.showInputDialog(null,
-                                "Puesto del empleado: ");
+                        String nombre = JOptionPane.showInputDialog(null,
+                                "Nombre del empleado: ");
+                        String documentox = JOptionPane.showInputDialog(null,
+                                "Tipo de Documento (DUI/NIT):");
+                        double salario = Integer.parseInt(JOptionPane.showInputDialog(null,
+                                "Salario a pagar: "));
+                        if (documentox.equals("DUI")||documentox.equals("dui")||documentox.equals("Dui")){
+                            int numeroDocumento = Integer.parseInt(JOptionPane.showInputDialog(null,
+                                    "Número de DUI del empleado: "));
+                        }else{
+                            JOptionPane.showInputDialog(null,
+                                    "Número de NIT del empleado: ");
+
+                        }
                     }
 
 
-                    if (documentox.equals("DUI")||documentox.equals("dui")||documentox.equals("Dui")){
+
+                    /*if (documentox.equals("DUI")||documentox.equals("dui")||documentox.equals("Dui")){
                         int numeroDocumento = Integer.parseInt(JOptionPane.showInputDialog(null,
                                 "Número de DUI del empleado: "));
                     }else{
                         JOptionPane.showInputDialog(null,
                                 "Número de NIT del empleado: ");
-                    }
+                    }*/
 
                     break;
                 case 2:
+                    unaEmpresa.quitEmpleado(despedir);
                     break;
                 case 3:
+                    JOptionPane.showMessageDialog(null, unaEmpresa.toString());
                     break;
                 case 4:
                     break;
                 case 5:
+
                     break;
                 case 6:
                     return;
