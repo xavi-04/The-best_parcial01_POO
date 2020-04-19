@@ -103,7 +103,7 @@ package com.XAQC.x00048219;
 
         //------------------------------------
 
-        pagoEmpleado = (Salario - totalRenta);
+       /* pagoEmpleado = (Salario - totalRenta);
 
         totalAFP = (0.0625 * Salario);
         totalISSS = (0.03 * Salario);
