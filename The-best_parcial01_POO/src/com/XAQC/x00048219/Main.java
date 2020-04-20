@@ -43,9 +43,9 @@ public class Main {
 
                         }
                         unaEmpresa.addEmpleado(new ServicioProfesional(nombre, puesto, Salario, mesesContrato));
-                        if (empleado.forEach(obj -> {
-                            if(obj.addDocumento(new Documento(nombre, numero));
-                        });
+                        /*if (empleado.forEach(obj -> {
+                            if(obj.addDocumento(new Documento(nombre, numero));)
+                        }));*/
                     }else{
                         String nombre = JOptionPane.showInputDialog(null,
                                 "Nombre del empleado: ");
@@ -83,16 +83,16 @@ public class Main {
                     JOptionPane.showMessageDialog(null, unaEmpresa.getPlanilla());
                     break;
                 case 4:
-                    String consultarSal = JOptionPane.showInputDialog(null,
+                    /*String consultarSal = JOptionPane.showInputDialog(null,
                             "Insertar el nombre del empleado para consultar el sueldo");
                     if(empleado.forEach(obj-> {
                         if(obj.)
                 });)
 
-                    if (CalculadoraImpuestos.calcularPago(consultarSal.equals()))
+                    if (CalculadoraImpuestos.calcularPago(consultarSal.equals()))*/
 
 
-                    
+
                     break;
                 case 5:
                     JOptionPane.showMessageDialog(null, CalculadoraImpuestos.mostrarTotales());
