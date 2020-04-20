@@ -83,7 +83,7 @@ public class Main {
                 case 4:
                     break;
                 case 5:
-
+                    JOptionPane.showMessageDialog(null, CalculadoraImpuestos.mostrarTotales());
                     break;
                 case 6:
                     return;
