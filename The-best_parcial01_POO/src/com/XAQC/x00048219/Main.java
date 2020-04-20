@@ -65,7 +65,14 @@ static Scanner in = new Scanner(System.in);
 
                     break;
                 case 2:
-                    unaEmpresa.quitEmpleado(despedir);
+                    String eliminar = JOptionPane.showInputDialog(null, "Ingrese el nombre del empleado a eliminar: ");
+                    if(eliminar.equals(unaEmpresa.getNombre())){
+                        unaEmpresa.quitEmpleado(unaEmpresa.getNombre());
+                    }
+                    else{
+                        JOptionPane.showMessageDialog(null, "No se encontro el nombre del empleado", "¡Error!", JOptionPane.ERROR_MESSAGE);
+                    }
+
                     break;
                 case 3:
                     JOptionPane.showMessageDialog(null, unaEmpresa.toString());
