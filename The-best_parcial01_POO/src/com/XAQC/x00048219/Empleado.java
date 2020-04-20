@@ -44,5 +44,15 @@ import java.util.ArrayList;
         public void setSalario(double salario) {
             Salario = salario;
         }
+
+        @Override
+        public String toString() {
+            return "Empleado{" +
+                    "nombre='" + nombre + '\'' +
+                    ", puesto='" + puesto + '\'' +
+                    ", Salario=" + Salario +
+                    ", documentos=" + documentos +
+                    '}';
+        }
     }
 

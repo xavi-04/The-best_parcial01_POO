@@ -5,13 +5,17 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
-static Scanner in = new Scanner(System.in);
+    static Scanner in = new Scanner(System.in);
 
     public static void main(String[] args) {
+        Empresa unaEmpresa = new Empresa("The best");
         ArrayList<Documento> documento = new ArrayList<>();
         ArrayList<Empleado> empleado = new ArrayList<>();
-        Empresa unaEmpresa = new Empresa("The best");
-    int op = 0;
+
+        int op = 0;
+        String numero = null;
+        double Salario = 0;
+        int extension = 0, mesesContrato = 0;
 
         do {
             op = Integer.parseInt(JOptionPane.showInputDialog(null, menu()));
@@ -35,7 +39,11 @@ static Scanner in = new Scanner(System.in);
                             JOptionPane.showInputDialog(null,
                                     "Número de NIT del empleado: ");
 
+                            documento.add(new Documento(nombre, numero));
+
                         }
+                        unaEmpresa.addEmpleado(new ServicioProfesional(nombre, puesto, Salario, mesesContrato));
+
                     }else{
                         String nombre = JOptionPane.showInputDialog(null,
                                 "Nombre del empleado: ");
@@ -49,19 +57,13 @@ static Scanner in = new Scanner(System.in);
                         }else{
                             JOptionPane.showInputDialog(null,
                                     "Número de NIT del empleado: ");
+                            documento.add(new Documento(nombre, numero));
 
                         }
+                        unaEmpresa.addEmpleado(new PlazaFija(nombre, puesto, Salario, extension));
+
                     }
 
-
-
-                    /*if (documentox.equals("DUI")||documentox.equals("dui")||documentox.equals("Dui")){
-                        int numeroDocumento = Integer.parseInt(JOptionPane.showInputDialog(null,
-                                "Número de DUI del empleado: "));
-                    }else{
-                        JOptionPane.showInputDialog(null,
-                                "Número de NIT del empleado: ");
-                    }*/
 
                     break;
                 case 2:
@@ -70,12 +72,13 @@ static Scanner in = new Scanner(System.in);
                         unaEmpresa.quitEmpleado(unaEmpresa.getNombre());
                     }
                     else{
-                        JOptionPane.showMessageDialog(null, "No se encontro el nombre del empleado", "¡Error!", JOptionPane.ERROR_MESSAGE);
+                        JOptionPane.showMessageDialog(null, "No se encontro el nombre del empleado",
+                                "                                        ¡ERROR!", JOptionPane.ERROR_MESSAGE);
                     }
 
                     break;
                 case 3:
-                    JOptionPane.showMessageDialog(null, unaEmpresa.toString());
+                    JOptionPane.showMessageDialog(null, unaEmpresa.getPlanilla());
                     break;
                 case 4:
                     break;
@@ -91,7 +94,6 @@ static Scanner in = new Scanner(System.in);
 
                     break;
             }
-
         }while(op != 0);
     }
 
